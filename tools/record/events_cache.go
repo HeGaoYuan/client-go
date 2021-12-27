@@ -37,7 +37,8 @@ const (
 	maxLruCacheEntries = 4096
 
 	// if we see the same event that varies only by message
-	// more than 10 times in a 10 minute period, aggregate the event
+	// more than 10 times, which the max interval time of two events are 10 minutes,
+	// then we aggregate the event
 	defaultAggregateMaxEvents         = 10
 	defaultAggregateIntervalInSeconds = 600
 
